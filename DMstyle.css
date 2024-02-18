@@ -1,47 +1,52 @@
 html {
   font-size: 10px; /* This controls the text font in the boxes */
-  background: linear-gradient(to right, #6495ED, #555);
+    background: linear-gradient(to right, #6495ed, #555); /* This controls the background coloring */
   color: #fff;
 }
 
-body {
+body { /* This is where to control the boxes' alignments */
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   display: flex;
   min-height: 100vh;
-  align-items: center;
+  align-items: center; 
   justify-content: center;
 }
 
-#drum-kit {
-  display: flex;
-  flex-wrap: wrap;
+#drum-kit { /* This is where how the boxes will be arranged */
+  display: flex; 
+  flex-wrap: wrap; 
   justify-content: center;
   gap: 50px;
   padding: 20px;
 }
 
-.key {
-  border: .4rem solid #fff;
-  border-radius: .5rem;
+.key { /* This is where how the boxes are adjusted and colored */
+  border: 0.4rem solid #fff;
+  border-radius: 0.5rem;
   margin: 1rem;
   font-size: 1.5rem;
-  padding: 1rem .5rem;
-  transition: all .07s ease;
+  padding: 1rem 0.5rem;
+  transition: all 0.07s ease;
   width: 10rem;
   text-align: center;
   color: #fff;
-  background: linear-gradient(to right, rgba(100, 149, 237, 0.4), rgba(58, 53, 53, 0.4));
+  background: linear-gradient(
+    to right,
+    rgba(100, 149, 237, 0.4),
+    rgba(58, 53, 53, 0.4)
+  );
 }
 
-.key.active {
+.key.active { /* This is where the boxes will look like when pressed */
   transform: scale(1.1);
   border-color: #ffc600;
   box-shadow: 0 0 1rem #ffc600;
 }
 
-.key:active,.key:focus {
+.key:active,
+.key:focus {
   outline: none;
   transform: scale(0.95);
 }
@@ -54,7 +59,7 @@ kbd {
 .sound {
   font-size: 1.2rem;
   text-transform: uppercase;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   color: #ffc600;
 }
 
